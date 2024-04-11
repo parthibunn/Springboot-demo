@@ -15,6 +15,7 @@ phases:
   post_build:
     commands:
       - echo "Packaging application for deployment..."
+      - mv target/*.jar demo.jar
 artifacts:
   files:
-    - MyApp.jar
+    - demo.jar
