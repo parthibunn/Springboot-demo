@@ -12,3 +12,9 @@ phases:
     commands:
       - echo "Building application..."
       - mvn clean install -DskipTests=true
+post_build:
+    commands:
+      - echo "Packaging application for deployment..."
+artifacts:
+  files:
+    - MyApp.jar
